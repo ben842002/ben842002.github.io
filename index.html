@@ -5,13 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- CSS and Favicon -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="Images/website_favicon.ico">
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <!-- CSS and Favicon -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Images/website_favicon.ico">
 
         <title>Benjamin Chau</title>
     </head>
@@ -54,7 +53,7 @@
         <section id="hero">
             <div class="container-fluid">
                 <!-- Title and image -->
-                <div class="row">
+                <div class="flex row">
                     <div class="hero-text col-lg-6">
                         <p class="sub-head">Hello! I am</p>
                         <h1 class="sub-name">Benjamin Chau</h1>
@@ -69,7 +68,91 @@
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section id="education">
+            <div class="container-fluid">                
+                <div class="flex row">
+                    <div class="col-lg-6">
+                        <h1 class="section-header">Education</h1>
+                        <p class="education-description">
+                            I am currently an undergraduate student at the
+                            <a class="URI-link" href="https://www.uri.edu/" target="_blank">University of Rhode Island</a> 
+                            pursuing a Bachelor of Science degree in Computer Science. I plan 
+                            on graduating in May 2024.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="Images/URI-Ariel.jpg" alt="URI Photo" class="URI-Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container-fluid">
+                <h1 class="section-header">Projects</h1>
+                <h4 class="github"><a href="https://github.com/ben842002" target="_blank">GitHub Portfolio</a></h4>
+                <p>As of right now, I have built multiple video game projects utilizing Unity2D in order to expand my knowledge in programming, creative design, critical thinking, and problem solving. I plan learning full stack web development through school and online resources to design and build more complex projects to further my skillsets and depth of knowledge.</p>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <img class="card-img-top" src="Images/nomads-journey.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-title">A Nomad's Journey</h3>
+                                <div class="links">
+                                    <a href="https://github.com/ben842002/a-nomads-journey-project-files" target="_blank">GitHub Files</a>   
+                                    <a href="https://ben842002.github.io/a-nomads-journey/" target="_blank">Play in Browser</a>
+                                </div>
+                              <p class="card-text">2D Platformer video game made with the Unity Game Engine and C#.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <img class="card-img-top" src="Images/wandering-hero.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-title">The Wandering Hero</h3>
+                                <div class="links">
+                                    <a href="https://github.com/ben842002/the-wandering-hero-project-files" target="_blank">GitHub Files</a>   
+                                    <a href="https://ben842002.github.io/the-wandering-hero/" target="_blank">Play in Browser</a>
+                                </div>
+                              <p class="card-text">2D Top Down video game made with the Unity Game Engine and C#.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <img class="card-img-top" src="Images/hiragana-seito-defense.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-title">Hiragana Seito Defense</h3>
+                                <div class="links">
+                                    <a href="https://github.com/ben842002/hiragana-seito-defense-project-files" target="_blank">GitHub Files</a>   
+                                    <a href="https://ben842002.github.io/hiragana-seito-defense/" target="_blank">Play in Browser</a>
+                                </div>
+                              <p class="card-text">2D Typing Game made in Unity with C#. Aimed to help users identify and type Japanese Hiragana.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <img class="card-img-top" src="Images/simon.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-title">Simon Game</h3>
+                                <div class="links">
+                                    <a href="https://github.com/ben842002/simon-game" target="_blank">GitHub Files</a>    
+                                    <a href="Simon Game/index.html" target="_blank">Play in Browser</a>
+                                </div>
+                                <p class="card-text">Simple online version of the memorization game Simon. Made with HTML, CSS, and JavaScript/jQuery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!-- Bootstrap JS -->

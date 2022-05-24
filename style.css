@@ -11,12 +11,33 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Global Classes */
+.section-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Containers */
+.container-fluid {
+    padding: 7.5% 17.5%;
+}
+
 #main-nav .container-fluid {
     padding: 0 15%;
 }
 
 #hero .container-fluid {
-    padding: 7.5% 15%;
     background-color: #2424c1;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,193,1) 0%, #00758c 100%);
 }
@@ -41,11 +62,10 @@ nav.navbar {
 .hero-text {
     text-align: left;
     color: rgb(226, 226, 226);;
-    padding: 70px 0;
 }
 
 .sub-head, .sub-description {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: bold;
     margin: 0;
 }
@@ -59,6 +79,9 @@ h1.sub-name {
 }
 
 .hero-img {
+    display: block;
+    margin: auto;
+
     border-radius: 25px;
     border: 10px solid white;
 
@@ -67,5 +90,110 @@ h1.sub-name {
 
 .hero-img:hover {
     transform: scale(1.015);
+}
+
+/* EDUCATION */
+#education .education-description, #education h1 {
+    text-align: left;
+}
+
+a.URI-link {
+    text-decoration: none;
+    color: #007AF3;
+}
+
+.URI-Image {
+    box-shadow: 25px 25px 0px #007AF3;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.25s ease-in-out;
+}
+
+.URI-Image:hover {
+    transform: scale(1.015);
+}
+
+/* PROJECTS */
+section#projects {
+    background-color: #20272E;
+    color: #fff;
+    text-align: center;
+}
+
+.github {
+    font-weight: bold;
+}
+
+.card {
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    width: 85%;
+    margin: 25px auto;
+    border: none;
+    transition: transform 0.25s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-text, .card-title {
+    color: black;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 32.5px;
+}
+
+.links {
+    font-size: 20px;
+    margin-bottom: 7.5px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+@media (max-width: 990px) {
+    .container-fluid {
+        padding: 17.5% 10%;
+    }
+
+    /* NAVBAR */
+    .nav-item {
+        padding: 0;
+    }
+
+    /* HERO */
+    .hero-text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    /* EDUCATION */
+    #education .education-description, #education h1 {
+        text-align: center;
+    }
+
+    .education-description {
+        margin-bottom: 30px;
+    }
+
+    /* PROJECTS */
+    .card {
+        width: 100%;
+    }
 }
 
