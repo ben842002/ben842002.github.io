@@ -11,11 +11,22 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
+#main-nav .container-fluid {
+    padding: 0 15%;
+}
+
+#hero .container-fluid {
+    padding: 7.5% 15%;
+    background-color: #2424c1;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,193,1) 0%, #00758c 100%);
+}
+
 /* NAVBAR */
 nav.navbar {
     font-weight: bold;
     font-size: 1.25rem;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-brand span {
@@ -25,3 +36,36 @@ nav.navbar {
 .nav-item {
     padding: 5px 10px;
 }
+
+/* HERO */
+.hero-text {
+    text-align: left;
+    color: rgb(226, 226, 226);;
+    padding: 70px 0;
+}
+
+.sub-head, .sub-description {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h1.sub-name {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.hero-img {
+    border-radius: 25px;
+    border: 10px solid white;
+
+    transition: .25s ease-in-out;
+}
+
+.hero-img:hover {
+    transform: scale(1.015);
+}
+
