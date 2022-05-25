@@ -258,6 +258,7 @@ input[type="submit"]:hover {
     color: #007AF3;
 }
 
+/* 990 pixels and lower */
 @media (max-width: 990px) {
     .container-fluid {
         padding: 17.5% 10%;
