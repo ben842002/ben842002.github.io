@@ -30,7 +30,7 @@ p {
 
 /* Containers */
 .container-fluid {
-    padding: 7.5% 17.5%;
+    padding: 10% 17.5%;
 }
 
 #main-nav .container-fluid {
@@ -43,6 +43,18 @@ p {
 }
 
 /* NAVBAR */
+#main-nav {
+    background-color: #fff;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.navbar li a:hover {
+    cursor: pointer;
+}
+
 nav.navbar {
     font-weight: bold;
     font-size: 1.25rem;
@@ -122,14 +134,17 @@ section#projects {
 
 .github {
     font-weight: bold;
+    margin-top: 50px;
 }
 
 .card {
     background-color: rgb(236, 236, 236);
     text-align: center;
-    width: 85%;
+    width: 75%;
     margin: 25px auto;
     border: none;
+    border-radius: 25px;
+    overflow: hidden;
     transition: transform 0.25s ease-in-out;
 }
 
@@ -154,6 +169,93 @@ section#projects {
 .links a {
     display: inline-block;
     margin: 0 15px;
+}
+
+/* INTERESTS */
+.interests-row {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.interests-fa {
+    font-size: 100px;
+    margin-bottom: 25px;
+    color: #007AF3;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.interests-fa:hover {
+    transform: scale(1.035);
+    color: #0080ff;
+}
+
+.component {
+    margin-bottom: 50px;
+}
+
+.component h3 {
+    font-weight: bold;
+}
+
+/* CONTACT */
+#contact {
+    background-color: #2424c1;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,193,1) 0%, #00758c 100%);
+    color: #fff;
+}
+
+.contactInfo {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 1.35rem;
+}
+
+.contactInfo a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 25px;
+}
+
+label {
+    position:relative;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #007AF3;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5rem;
+
+    display: inline-block;
+    margin: 0;
+    padding: 0.8rem 2rem;
+    width: unset;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #007AF3;
 }
 
 @media (max-width: 990px) {
@@ -193,7 +295,21 @@ section#projects {
 
     /* PROJECTS */
     .card {
-        width: 100%;
+        width: 85%;
+    }
+
+    /* INTERESTS */
+    .component {
+        margin-bottom: 50px;
+    }
+
+    /* CONTACT */
+    .contactInfo {
+        margin-bottom: 20px;
+    }
+    .contactInfo a {
+        display: block;
+        margin-bottom: 15px;
     }
 }
 

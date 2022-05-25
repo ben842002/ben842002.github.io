@@ -8,6 +8,9 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/4c5bba2333.js" crossorigin="anonymous"></script>
+
         <!-- CSS and Favicon -->
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="Images/website_favicon.ico">
@@ -30,19 +33,19 @@
                     <div class="collapse navbar-collapse" id="navbarScroll">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="">Resume</a>
+                                <a class="nav-link" href="resume.html" target="_blank">Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Education</a>
+                                <a class="nav-link" onclick="ScrollToSection('education')">Education</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Projects</a>
+                                <a class="nav-link" onclick="ScrollToSection('projects')">Projects</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="">Interests</a>
+                              <a class="nav-link" onclick="ScrollToSection('interests')">Interests</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="">Contact</a>
+                              <a class="nav-link" onclick="ScrollToSection('contact')">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -93,7 +96,7 @@
             <div class="container-fluid">
                 <h1 class="section-header">Projects</h1>
                 <h4 class="github"><a href="https://github.com/ben842002" target="_blank">GitHub Portfolio</a></h4>
-                <p>As of right now, I have built multiple video game projects utilizing Unity2D in order to expand my knowledge in programming, creative design, critical thinking, and problem solving. I plan learning full stack web development through school and online resources to design and build more complex projects to further my skillsets and depth of knowledge.</p>
+                <p>As of right now, I have built multiple video game projects utilizing Unity2D in order to expand my knowledge in programming, creative design, critical thinking, and problem solving. I plan on learning full-stack web development through school and online resources to design and build more complex projects to further my skillsets and depth of knowledge.</p>
 
                 <div class="row">
                     <div class="col-lg-6">
@@ -151,10 +154,71 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
+
+        <section id="interests">
+            <div class="container-fluid">
+                <h1 class="section-header">Interests</h1>
+    
+                <div class="interests-row row">
+                    <div class="component col-xl-3 col-md-6">
+                        <i class="interests-fa fa-solid fa-laptop-code"></i>
+                        <h3 class="feature-title">Programming</h3>            
+                    </div>
+                
+                    <div class="component col-xl-3 col-md-6">
+                        <i class="interests-fa fa-solid fa-gamepad"></i>
+                        <h3 class="feature-title">Video Games</h3>
+                    </div>
+                
+                    <div class="component col-xl-3 col-md-6">
+                        <i class="interests-fa fa-solid fa-person-running"></i>
+                        <h3 class="feature-title">Running</h3>
+                    </div>
+
+                    <div class="component col-xl-3 col-md-6">
+                        <i class="interests-fa fa-solid fa-computer"></i>
+                        <h3 class="feature-title">Web Surfing</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container-fluid">
+                <h1 class="section-header">Contact Me!</h1>
+                <div class="contactInfo">
+                    <a href="https://www.linkedin.com/in/benjamin-chau/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/ben842002" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> 
+                    <i class="fa-solid fa-envelope"></i> ben842002@uri.edu
+
+                </div>
+
+                <form action="https://formsubmit.co/ben842002@uri.edu" method="POST">
+                    <input type="hidden" name="_subject" value="New submission from Personal Website">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter Message" required></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+               </form>
+                
+            </div>
+        </section>
         
+        <!-- JS -->
+        <script type="text/JavaScript" src="index.js"></script>
+
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
