@@ -260,7 +260,7 @@ input[type="submit"]:hover {
 /* 990 pixels and lower */
 @media (max-width: 990px) {
     .container-fluid {
-        padding: 17.5% 10%;
+        padding: 175px 7.5%;
     }
 
     #main-nav .container-fluid {
