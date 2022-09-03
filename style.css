@@ -140,7 +140,6 @@ section#projects {
 .card {
     background-color: rgb(236, 236, 236);
     text-align: center;
-    width: 75%;
     margin: 25px auto;
     border: none;
     border-radius: 25px;
@@ -148,8 +147,8 @@ section#projects {
     transition: transform 0.25s ease-in-out;
 }
 
-.card:hover {
-    transform: scale(1.01);
+.card-img-top {
+    height: 300px;
 }
 
 .card-text, .card-title {
