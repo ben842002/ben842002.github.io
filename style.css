@@ -18,7 +18,7 @@ p {
 
 /* Global Classes */
 .section-header {
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 3rem;
 }
@@ -26,6 +26,11 @@ p {
 .flex {
     display: flex;
     align-items: center;
+}
+
+.row-list {
+    margin-top: 100px;
+    text-align: center;
 }
 
 /* Containers */
@@ -125,16 +130,45 @@ a.URI-link {
     transform: scale(1.015);
 }
 
+/* WORK EXPERIENCE */
+#work-experience {
+    background-color: #2424c1;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,193,1) 0%, #00758c 100%);
+    color: white;
+}
+
+.work-experience-row {
+    margin-top: 25px;
+}
+
+.card-subtitle {
+    color: rgb(95, 95, 95);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.card-date {
+    color: rgb(82, 82, 82);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 /* PROJECTS */
 section#projects {
     background-color: #20272E;
     color: #fff;
-    text-align: center;
+    text-align: left;
+}
+
+.projects-description {
+    margin-top: 20px;
+    width: 70%;
 }
 
 .github {
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -171,11 +205,6 @@ section#projects {
 }
 
 /* INTERESTS */
-.interests-row {
-    margin-top: 100px;
-    text-align: center;
-}
-
 .interests-fa {
     font-size: 100px;
     margin-bottom: 25px;
@@ -205,8 +234,7 @@ section#projects {
 }
 
 .contactInfo {
-    text-align: center;
-    margin: 25px 0;
+    margin-bottom: 50px;
     font-size: 1.35rem;
 }
 
@@ -267,6 +295,10 @@ input[type="submit"]:hover {
         padding: 0 20px;
     }
 
+    .section-header, .contactInfo, .projects-description, .github {
+        text-align: center;
+    } 
+
     /* NAVBAR */
     .nav-item {
         padding: 0;
@@ -305,6 +337,10 @@ input[type="submit"]:hover {
     /* INTERESTS */
     .component {
         margin-bottom: 50px;
+    }
+
+    .projects-description {
+        width: 100%;
     }
 
     /* CONTACT */
