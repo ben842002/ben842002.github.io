@@ -143,6 +143,7 @@ a.URI-link {
 
 .card-subtitle {
     color: rgb(95, 95, 95);
+    font-size: 20px;
     font-weight: bold;
     margin-top: 15px;
 }
@@ -183,6 +184,7 @@ section#projects {
 
 .card-img-top {
     height: 300px;
+    object-fit: cover;
 }
 
 .card-text, .card-title {
@@ -191,7 +193,7 @@ section#projects {
 
 .card-title {
     font-weight: bold;
-    font-size: 32.5px;
+    font-size: 25px;
 }
 
 .links {
